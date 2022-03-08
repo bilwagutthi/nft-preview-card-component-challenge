@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --softBlue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(217, 54%, 11%);
+    padding: 0px;
+}
+
+.card {
+    margin-top: 150px;
+    width: 300px;
+    height: 550px;
+    padding: 25px;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 20px;
+    box-shadow: 5px 10px 20px black;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-between;
+}
+
+.photo {
+    padding: 0px;
+    margin: 0px;
+    width: 300px;
+    height: 300px;
+    cursor: pointer;
+    position: relative;
+}
+
+.overlay {
+    background-image: url("images/icon-view.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 5px;
+    background-color: var(--cyan);
+    height: inherit;
+    width: inherit;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: 1s ease;
+}
+
+.photo:hover .overlay {
+    opacity: 0.5;
+}
+
+.photo img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+.card h1 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--white);
+}
+
+.card h1:hover {
+    color: var(--cyan);
+    cursor: pointer;
+}
+
+.card p {
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--softBlue);
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.infobox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.infobox p {
+    font-family: 'Outfit', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.cyan p {
+    color: var(--cyan) !important;
+}
+
+.lightBlue p {
+    color: var(--softBlue);
+}
+
+.infobox img {
+    width: fit-content;
+    height: fit-content;
+}
+
+.infobox p {
+    margin-left: 5px;
+}
+
+.creator {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.creator img {
+    padding: 0px;
+    margin: 0px;
+    width: 32px;
+    height: auto;
+    border-radius: 50%;
+    border: 1px solid var(--white);
+}
+
+.creator p {
+    margin-left: 15px;
+    color: var(--softBlue);
+    font-family: 'Outfit', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+hr {
+    height: 0.1px;
+    border: none;
+    background-color: hsl(215, 32%, 27%);
+}
+
+.creator a {
+    color: var(--white);
+    font-family: 'Outfit', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.creator a:hover {
+    color: var(--cyan);
+    cursor: pointer;
+}
+
+footer {
+    margin: 50px;
+}
+
+footer p {
+    color: var(--softBlue);
+    font-family: 'Outfit', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+footer a {
+    color: var(--white);
+    font-family: 'Outfit', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    text-decoration: none;
+}
